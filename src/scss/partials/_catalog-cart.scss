@@ -1,0 +1,48 @@
+.catalog-cart {
+	width: 400px;
+	border-radius: var(--border-radius-large);
+	background-color: var(--color-light);
+	box-shadow: var(--box-shadow);
+	padding: 30px;
+
+	&.disable {
+		display: none;
+	}
+
+	&__image {
+		margin-inline: auto;
+		margin-bottom: 60px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__price {
+		font-size: 20px;
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	&__info, &__color, &__memory, &__sim {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	&__button-add {
+		width: 100%;
+	}
+}

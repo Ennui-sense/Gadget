@@ -1,0 +1,13 @@
+.control-panel {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin-bottom: 30px;
+
+	&__button {
+		&.active {
+			color: var(--color-light);
+			background-color: var(--color-dark);
+		}
+	}
+}

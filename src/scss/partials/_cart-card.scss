@@ -1,0 +1,55 @@
+.cart-card {
+	@include flex-sb;
+
+	width: 100%;
+	padding: 35px 40px;
+	column-gap: 50px;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		display: block;
+		height: 148px;
+		width: 2px;
+		background-color: var(--color-dark);
+	}
+
+	&__content {
+		margin-right: auto;
+	}
+
+	&__name {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	&__options {
+		@include flex-center;
+		
+		column-gap: 10px;
+		margin-bottom: 35px;
+	}
+
+	&__delete-button {
+		@include button-reset;
+
+		font-weight: 300;
+		font-size: 16px;
+		color: var(--color-dark);
+		transition-duration: 0s;
+
+		@include hover {
+			text-decoration: underline;
+			color: var(--color-error);
+		}
+	}
+
+	&__price {
+		font-weight: 600;
+		font-size: 20px;
+	}
+}

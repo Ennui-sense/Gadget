@@ -1,0 +1,35 @@
+{
+	"name": "lunephlare-vite-starter",
+	"version": "1.0.0",
+	"author": "Lune Phlare",
+	"scripts": {
+		"dev": "vite",
+		"dev:host": "vite --host",
+		"build": "vite build --emptyOutDir",
+		"preview": "vite preview",
+		"preview:host": "vite preview --host",
+		"html": "node-w3c-validator -f lint -evH -i dist/**/*.html",
+		"deploy": "vercel --prod"
+	},
+	"type": "module",
+	"devDependencies": {
+		"node-w3c-validator": "^2.0.2",
+		"sass": "^1.89.1",
+		"sharp": "^0.33.1",
+		"svgo": "^3.1.0",
+		"vite": "^5.4.19",
+		"vite-plugin-handlebars": "^2.0.0",
+		"vite-plugin-html": "^3.2.2",
+		"vite-plugin-image-optimizer": "^1.1.7",
+		"vite-svg-sprite-wrapper": "^1.3.0"
+	},
+	"browserslist": [
+		"cover 99.5%"
+	],
+	"dependencies": {
+		"@floating-ui/dom": "^1.7.1",
+		"graph-modal": "github:maxdenaro/graph-modal",
+		"imask": "^7.6.1",
+		"swiper": "^11.2.8"
+	}
+}

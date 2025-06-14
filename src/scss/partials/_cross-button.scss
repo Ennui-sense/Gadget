@@ -1,0 +1,4 @@
+.cross-button {
+	@include button-reset;
+	@include flex-center(true);
+}

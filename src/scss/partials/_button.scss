@@ -1,0 +1,45 @@
+.button {
+	@include flex-center;
+
+	position: relative;
+	height: var(--button-height);
+	border-radius: var(--border-radius);
+	padding-inline: 45px;
+	background: var(--color-dark);
+	color: var(--color-light);
+	border: none;
+
+	&__text {
+		z-index: 2;
+	}
+
+	&:where(:not(.button--transparent))::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--gradient);
+		border-radius: inherit;
+		opacity: 0;
+		transition: opacity var(--transition-duration);
+	}
+
+	@include hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	&--transparent {
+		background-color: transparent;
+		color: var(--color-dark);
+		border: var(--border);
+
+		@include hover {
+			background-color: var(--color-gray-dark);
+			color: var(--color-light);
+		}
+	}
+}

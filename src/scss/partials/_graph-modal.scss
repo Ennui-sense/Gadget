@@ -1,0 +1,9 @@
+.graph-modal {
+	display: block !important;
+
+	&__container {
+		margin: 0 !important;
+		border-radius: var(--border-radius) !important; 
+		padding: 0 !important;
+	}
+}

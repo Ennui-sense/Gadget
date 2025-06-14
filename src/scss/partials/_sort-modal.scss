@@ -1,0 +1,60 @@
+.sort-modal {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius);
+	max-width: 360px;
+	box-shadow: var(--box-shadow);
+	transition-duration: var(--transition-duration);
+
+	&__inner {
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&__form {
+		display: flex;
+		column-gap: 20px;
+		align-items: center;
+	}
+
+	&__field {
+		@include flex-center(true);
+
+		height: 100%;
+	}
+
+	&__input {
+		appearance: none;
+
+		&:checked {
+			& + .sort-modal__label {
+				&::before {
+					background-color: var(--color-dark);
+					border: none;
+				}
+			}
+		}
+	}
+
+	&__label {
+		font-size: 12px;
+		display: flex;
+		column-gap: 10px;
+		align-items: center;
+		cursor: pointer;
+
+		&::before {
+			@include square(12px);
+
+			content: "";
+			display: block;
+			background-color: transparent;
+			border-radius: var(--border-radius-x-small);
+			border: var(--border-gray);
+		}
+	}
+}

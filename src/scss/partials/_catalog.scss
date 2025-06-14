@@ -1,0 +1,26 @@
+.catalog {
+	&__inner {
+		padding-block: 50px;
+	}
+
+	&__title {
+		margin-bottom: 28px;
+	}
+
+	&__parameters {
+		margin-bottom: 50px;
+	}
+
+	&__selected-filters {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		margin-bottom: 20px;
+	}
+
+	&__products {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		row-gap: 50px;
+	}
+}

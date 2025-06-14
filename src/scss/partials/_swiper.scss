@@ -1,0 +1,11 @@
+.swiper {
+	width: 100% !important;
+
+	&-pagination {
+		position: relative !important;
+
+		@include mobile {
+			top: -30px !important;
+		}
+	}
+}

@@ -1,0 +1,188 @@
+<header class="header container">
+	<div class="header__inner">
+		<a href="#" class="header__logo">
+			<img src="../img/logo.svg" alt="Наш логотип" class="header__logo-image" width="228" height="22" loading="lazy"></img>
+		</a>
+
+		<a href="#" class="header__logo-alt">
+			<img src="../img/logo-alt.svg" alt="Наш логотип" class="header__logo-image" width="188" height="19" loading="lazy"></img>
+		</a>
+
+		<button type="button" class="header__city-button city-button">
+			<span class="city-button__name">Пермь</span>
+
+			<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2.16354 6.87629L14.0722 1.20636C15.8084 0.379153 17.6202 2.19186 16.794 3.92899L11.1236 15.8356C10.3484 17.4625 7.99938 17.3624 7.36616 15.6743L6.31828 12.8771C6.21589 12.6042 6.05628 12.3564 5.85018 12.1503C5.64407 11.9442 5.39624 11.7846 5.12333 11.6823L2.32491 10.6334C0.637689 10.0003 0.536578 7.65141 2.16354 6.87629Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+
+		<div class="perm-modal">
+			<div class="perm-modal__inner">
+				<p class="perm-modal__text">Ваш город <span>Пермь</span>?</p>
+
+				<div class="perm-modal__buttons">
+					<button type="button" class="perm-modal__button perm-modal__button-accept">Да</button>
+					<button type="button" class="perm-modal__button perm-modal__button-decline perm-modal__button--no-border">Нет</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="city-modal">
+			<div class="city-modal__inner">
+				<p class="city-modal__text">Выберите свой город из списка</p>
+
+				<div class="city-modal__buttons">
+					<button type="button" class="city-modal__button city-modal__button-name">Пермь</button>
+					<button type="button" class="city-modal__button city-modal__button-name">Екатеринбург</button>
+				</div>
+
+				<button type="button" class="city-modal__button city-modal__close-button cross-button">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L11 11M1 11L11 1" stroke="black" />
+					</svg>
+
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="header__magazine mobile-hidden">
+			<p class="header__magazine-time"><time datetime="10:00">10:00</time> - <time datetime="21:00">21:00</time></p>
+			<span class="header__magazine-devider"></span>
+			<p class="header__magazine-address">
+				Улица Куйбышева, 16 <br>
+				ТЦ Колизей Cinema  1 этаж
+			</p>
+		</div>
+
+		<div class="header__number mobile-hidden">
+			<p class="header__number-text">Позвоните нам!</p>
+			<span class="header__number-devider"></span>
+			<a href="tel:+79822448144" class="header__number-telephone">+7 (982) 244-81-44</a>
+		</div>
+
+		<div class="header__actions">
+			<button class="header__cart button-square" data-graph-path="first">
+				<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6.86021 34.0175C9.06021 36.6666 13.1522 36.6666 21.3399 36.6666H22.6599C30.8475 36.6666 34.9414 36.6666 37.1414 34.0175M6.86021 34.0175C4.66021 31.3665 5.41555 27.3441 6.92438 19.2958C7.99688 13.5758 8.53221 10.714 10.569 9.02365M37.1414 34.0175C39.3414 31.3665 38.586 27.3441 37.0772 19.2958C36.0047 13.5758 35.4675 10.714 33.4307 9.02365M33.4307 9.02365C31.3957 7.33331 28.4825 7.33331 22.6617 7.33331H21.338C15.5172 7.33331 12.6059 7.33331 10.569 9.02365" stroke="white" stroke-width="2.125"/>
+					<path d="M16.8115 14.6667C17.1903 15.7402 17.8927 16.6697 18.822 17.3272C19.7512 17.9848 20.8615 18.3378 21.9999 18.3378C23.1382 18.3378 24.2485 17.9848 25.1778 17.3272C26.107 16.6697 26.8094 15.7402 27.1882 14.6667" stroke="white" stroke-width="2.125" stroke-linecap="round"/>
+				</svg>
+
+				<span class="header__cart-count">4</span>
+
+				<span class="visually-hidden">Корзина</span>			
+			</button>
+
+			<div class="graph-modal cart">
+				<div class="graph-modal__container cart__content" role="dialog" aria-modal="true" data-graph-target="first">
+					<div class="cart__inner">
+						<header class="cart__header">
+							<p class="cart__title">Корзина</p>
+							<button class="button button-square js-modal-close" type="button">
+								<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5 1.5L21.5 21.5M1.5 21.5L21.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								<span class="visually-hidden">Закрыть</span>
+							</button>
+						</header>
+
+						<div class="cart__body">
+							<ul class="cart__products">
+								<li class="cart__product">
+									<article class="cart__card cart-card">
+										<img src="../img/phone-example.png" alt="" class="cart-card__image" width="96" height="172" loading="lazy">
+
+										<div class="cart-card__content">
+											<p class="cart-card__name">Apple iPhone 14</p>
+											<div class="cart-card__options">
+												<button type="button" class="cart-card__button memory-button memory-button__cart">64 GB</button>
+												<button type="button" class="cart-card__button sim-button sim-button__cart">2 sim</button>
+												<button type="button" class="cart-card__button color-button color-button__cart">
+													<span class="color-button__color color-button__color--black"></span>
+													<span class="visually-hidden">Черный</span>
+												</button>
+											</div>
+
+											<button type="button" class="cart-card__delete-button">Удалить</button>
+										</div>
+
+										<p class="cart-card__price">107 553 ₽</p>
+									</article>
+								</li>
+								<li class="cart__product">
+									<article class="cart__card cart-card">
+										<img src="../img/phone-example.png" alt="" class="cart-card__image" width="96" height="172" loading="lazy">
+
+										<div class="cart-card__content">
+											<p class="cart-card__name">Apple iPhone 14</p>
+											<div class="cart-card__options">
+												<button type="button" class="cart-card__button memory-button">64 GB</button>
+												<button type="button" class="cart-card__button sim-button">2 sim</button>
+												<button type="button" class="cart-card__button color-button">
+													<span class="color-button__color color-button__color--black"></span>
+													<span class="visually-hidden">Черный</span>
+												</button>
+											</div>
+
+											<button type="button" class="cart-card__delete-button">Удалить</button>
+										</div>
+
+										<p class="cart-card__price">107 553 ₽</p>
+									</article>
+								</li>
+							</ul>
+
+							<p class="cart__total">Итого: 215 106 ₽</p>
+
+							<form action="" class="cart__form cart-form">
+								<div class="cart-form__fields">
+									<div class="cart-form__field">
+										<label for="cart-name" class="cart-form__label">Имя</label>
+										<input type="text" name="cart-name" id="cart-name" class="cart-form__input" placeholder="Ваше Имя" maxlength="13">
+									</div>
+									<div class="cart-form__field">
+										<label for="cart-phone" class="cart-form__label">Номер телефона</label>
+										<input type="text" name="cart-phone" id="cart-phone" class="cart-form__input" placeholder="Номер телефона">
+									</div>
+									<div class="cart-form__field">
+										<label for="cart-email" class="cart-form__label">Почта</label>
+										<input type="email" name="cart-email" id="cart-email" class="cart-form__input" placeholder="Почта">
+									</div>
+								</div>
+
+								<div class="cart-form__personal">
+									<input type="checkbox" name="cart-agreement" id="cart-agreement" class="cart-form__personal-input">
+									<label for="cart-agreement" class="cart-form__personal-label">Что то там про согласие на обработку персональных данных</label>
+								</div>
+
+								<div class="cart-form__order">
+									<input type="button" value="Оставить заказ" class="button cart-form__order-button">
+									<p class="button">АААА</p>
+									<p class="cart-form__order-text">Получение заказа осуществляется самовывозом из магазина “Гаджет Галерея”, расположенного по адресу: г. Пермь, улица Куйбышева, 16 , ТЦ Колизей Cinema  1 этаж</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<a class="header__soc1al button-square" href="https://vk.com/official_gadgetgallery" target="_blank">
+				<svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M38.1021 1.54342C38.3764 0.635526 38.1021 0 36.8218 0H32.5544C31.4571 0 30.9693 0.575 30.695 1.21053C30.695 1.21053 28.5308 6.47632 25.4522 9.86579C24.4463 10.8645 24.0195 11.1671 23.4709 11.1671C23.1965 11.1671 22.8003 10.8645 22.8003 9.95658V1.54342C22.8003 0.453947 22.4955 0 21.581 0H14.875C14.2044 0 13.7777 0.514473 13.7777 0.96842C13.7777 1.99737 15.3018 2.23947 15.4847 5.08421V11.3184C15.4847 12.6803 15.2408 12.9224 14.6922 12.9224C13.2595 12.9224 9.72364 7.65658 7.65089 1.60395C7.22415 0.484211 6.82789 0 5.73055 0H1.46312C0.243853 0 0 0.575 0 1.21053C0 2.33026 1.43264 7.89868 6.73644 15.2526C10.2723 20.2763 15.2408 23 19.7521 23C22.465 23 22.8003 22.3947 22.8003 21.3658V17.5526C22.8003 16.3421 23.0441 16.1 23.9281 16.1C24.5682 16.1 25.6351 16.4026 28.165 18.8237C31.0608 21.6987 31.5485 23 33.164 23H37.4315C38.6507 23 39.2604 22.3947 38.8946 21.2145C38.4983 20.0342 37.1266 18.3092 35.2977 16.2513C34.2918 15.0711 32.7982 13.8303 32.3715 13.1947C31.7314 12.3776 31.9143 12.0145 32.3715 11.3184C32.3715 11.2882 37.5839 4.025 38.1021 1.54342Z" fill="white"/>
+				</svg>
+
+				<span class="visually-hidden">Наша группа ВКонтакте</span>			
+			</a>
+
+			<button class="header__burger-button button-square mobile-visible">
+				<svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1H16.5556M1 13.5H36M20.4444 26H36" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+				<span class="visually-hidden">Меню</span>			
+			</button>
+		</div>
+	</div>
+</header>

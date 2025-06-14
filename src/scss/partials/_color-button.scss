@@ -1,0 +1,65 @@
+.color-button {
+	@include flex-center(true);
+	@include square(40px);
+	@include button-reset;
+
+	position: relative;
+	background-color: var(--color-gray-alt);
+	border-radius: var(--border-radius-small);
+	border: none;
+
+	&__color {
+		@include square(30px);
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		transition: width var(--transition-duration), height var(--transition-duration);
+
+		&--white {
+			background-color: var(--color-white);
+		}
+
+		&--black {
+			background-color: var(--color-black);
+		}
+
+		&--pink {	
+			background-color: var(--color-pink);
+		}
+
+		&--blue {
+			background-color: var(--color-blue);
+		}
+	}
+
+	&:where(.color-button__cart) {
+		cursor: default;
+	}
+
+	&:where(:not(.color-button__cart)) {
+		@include hover {
+			.color-button__color {
+				@include square(40px);
+
+				border-radius: var(--border-radius-small);
+				border: var(--border);
+				border-color: var(--color-gray-alt);
+				border-width: 2px;
+				}
+			}
+
+		&.active {
+			.color-button__color {
+				@include square(40px);
+
+				border-radius: var(--border-radius-small);
+				border: var(--border);
+				border-color: var(--color-gray-alt);
+				border-width: 2px;
+			}
+		}
+	}
+}

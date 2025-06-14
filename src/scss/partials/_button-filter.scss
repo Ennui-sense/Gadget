@@ -1,0 +1,23 @@
+.button-filter {
+	@include flex-center(true);
+	@include square(50px);
+	@include button-reset;
+
+	background-color: transparent;
+	border-radius: var(--border-radius);
+	border: var(--border);
+
+	@include hover {
+		background-color: var(--color-gray-dark);
+		svg * {
+			stroke: var(--color-light);
+		}
+	}
+
+	&:active {
+		background-color: var(--color-dark);
+		svg * {
+			stroke: var(--color-light);
+		}
+	}
+}

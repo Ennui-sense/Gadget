@@ -1,0 +1,32 @@
+.search {	
+	position: relative;
+	width: 430px;
+
+	&__input {
+		width: 100%;
+		height: var(--button-height);
+		border-radius: var(--border-radius);
+		border: var(--border);
+		padding-inline: 20px 70px;
+		color: var(--color-dark);
+
+		&::placeholder {
+			color: var(--color-gray);
+		}
+
+		&:focus {
+			outline: 1px solid var(--color-accent-light);
+		}
+	}
+
+	&__button {
+		@include button-reset;
+		@include flex-center(true);
+		@include square(50px);
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+	}
+}

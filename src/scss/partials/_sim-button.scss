@@ -1,0 +1,26 @@
+.sim-button {
+	@include button-reset;
+	@include flex-center(true);
+	
+	background-color: transparent;
+	border-radius: var(--border-radius-small);
+	padding-inline: 22px;
+	height: var(--button-height-small);
+	border: var(--border);
+
+	&:where(.sim-button__cart) {
+		cursor: default;
+	}
+
+	&:where(:not(.sim-button__cart)) {
+		@include hover {
+			background-color: var(--color-gray-dark);
+			color: var(--color-gray-medium);
+		}
+
+		&.active {
+			background-color: var(--color-gray-dark);
+			color: var(--color-light);
+		}
+	}
+}

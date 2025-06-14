@@ -1,0 +1,12 @@
+.selected-filter {
+	display: none;
+	align-items: center;
+	column-gap: 25px;
+	border-radius: var(--border-radius);
+	background-color: var(--color-gray-alt);
+	padding: 10px 20px;
+
+	&.active {
+		display: flex;
+	}
+}

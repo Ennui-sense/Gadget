@@ -1,0 +1,80 @@
+<section class="section catalog container" id="catalog">
+	<div class="catalog__inner">
+		<h2 class="catalog__title">Каталог</h2>
+
+		<div class="catalog__control-panel control-panel">
+			<form action="" class="control-panel__search search">
+				<label for="search" class="search__label"></label>
+				<input type="text" name="search" class="search__input" id="search" placeholder="Что хотите найти?" maxlength="25">
+				<button type="button" class="search__button">
+					<svg width="30" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.3131 0C5.07341 0 0 5.24836 0 11.7032C0 18.158 5.07341 23.4064 11.3131 23.4064C14.179 23.4064 16.7917 22.292 18.787 20.4692L27.7828 29.7751C27.848 29.8453 27.926 29.9014 28.0123 29.94C28.0987 29.9786 28.1916 29.999 28.2857 30C28.3798 30.001 28.4731 29.9825 28.5602 29.9457C28.6472 29.9089 28.7264 29.8546 28.7929 29.7857C28.8594 29.7169 28.912 29.6351 28.9475 29.545C28.9831 29.4549 29.0009 29.3584 29 29.2611C28.999 29.1637 28.9793 29.0676 28.942 28.9783C28.9047 28.889 28.8505 28.8082 28.7826 28.7408L19.7869 19.4348C21.5489 17.3708 22.6262 14.668 22.6262 11.7032C22.6262 5.24836 17.5528 0 11.3131 0ZM11.3131 1.4629C16.7885 1.4629 21.212 6.03897 21.212 11.7032C21.212 17.3674 16.7885 21.9435 11.3131 21.9435C5.83767 21.9435 1.41414 17.3674 1.41414 11.7032C1.41414 6.03897 5.83767 1.4629 11.3131 1.4629Z" fill="#2A2A2A"/>
+					</svg>
+
+					<span class="visually-hidden">Поиск</span>
+				</button>
+			</form>
+
+			<button type="button" class="control-panel__button button button--transparent control-panel__button-all">Все товары</button>
+			<button type="button" class="control-panel__button button button--transparent">iPhone</button>
+			<button type="button" class="control-panel__button button button--transparent">Mac</button>
+			<button type="button" class="control-panel__button button button--transparent">Аксессуары</button>
+			<button type="button" class="control-panel__button button button--transparent">Другое</button>
+			<button type="button" class="button-filter">
+				<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M20.1053 -1.26532e-07L20.1053 8.25M20.1053 8.25C21.0702 8.25 23 8.8 23 11C23 13.2 21.0702 13.75 20.1053 13.75M20.1053 8.25C19.1404 8.25 17.2106 8.8 17.2106 11C17.2106 13.2 19.1404 13.75 20.1053 13.75M20.1053 13.75L20.1053 22" stroke="#2A2A2A"/>
+					<path d="M12.0003 -1.26532e-07L12.0003 2.75M12.0003 2.75C12.9652 2.75 14.895 3.3 14.895 5.5C14.895 7.7 12.9652 8.25 12.0003 8.25M12.0003 2.75C11.0354 2.75 9.1056 3.3 9.1056 5.5C9.1056 7.7 11.0354 8.25 12.0003 8.25M12.0003 8.25L12.0003 22" stroke="#2A2A2A"/>
+					<path d="M3.89484 -1.26532e-07L3.89484 13.75M3.89484 13.75C4.85974 13.75 6.78955 14.3 6.78955 16.5C6.78955 18.7 4.85974 19.25 3.89484 19.25M3.89484 13.75C2.92994 13.75 1.00013 14.3 1.00013 16.5C1.00013 18.7 2.92994 19.25 3.89484 19.25M3.89484 19.25L3.89484 22" stroke="#2A2A2A"/>
+				</svg>
+				 
+				<span class="visually-hidden">Фильтры</span>
+			</button>
+			<button type="button" class="button-filter button-filter__sort">
+				<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5.66667 18.3333V1M5.66667 1L10.3333 7.19048M5.66667 1L1 7.19048" stroke="#2A2A2A"/>
+					<path d="M18.3333 1.66667L18.3333 19M18.3333 19L13.6667 12.8095M18.3333 19L23 12.8095" stroke="#2A2A2A"/>
+				</svg>
+				
+				<span class="visually-hidden">Сортировка</span>
+			</button>
+			
+			<div class="sort-modal">
+				<div class="sort-modal__inner">
+					<p class="sort-modal__title h3">Сортировка</p>
+					<form action="" class="sort-modal__form">
+						<div class="sort-modal__field">
+							<input type="radio" name="sort" id="ascending" class="sort-modal__input" checked>
+							<label for="ascending" class="sort-modal__label">По возрастанию</label>
+						</div>
+
+						<div class="sort-modal__field">
+							<input type="radio" name="sort" id="discending" class="sort-modal__input">
+							<label for="discending" class="sort-modal__label">По убыванию</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="catalog__parameters">
+			<div class="catalog__selected-filters">
+				<div class="catalog__selected-filter selected-filter active">
+					<p class="selected-filter__text">10 000 - 15 000 ₽</p>
+					<button type="button" class="selected-filter__button cross-button">
+						<svg class="catalog__filter-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11" stroke="#2A2A2A"/>
+							<path d="M11 1L0.999999 11" stroke="#2A2A2A"/>
+						</svg>
+	
+						<span class="visually-hidden">Удалить фильтр</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="catalog__sort">По возрастанию цены</div>
+		</div>
+
+		<ul class="catalog__products">
+		</ul>
+	</div>
+</section>

@@ -1,0 +1,43 @@
+.button-square {
+	@include square(65px);
+	@include flex-center;
+	@include button-reset;
+
+	position: relative;
+	background-color: var(--color-gray-light);
+	border-radius: var(--border-radius);
+
+	svg {
+		z-index: 1;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--gradient);
+		border-radius: inherit;
+		opacity: 0;
+		transition: opacity var(--transition-duration);
+	}
+
+	@include hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	@include mobile-s {
+		@include square(40px);
+
+		background-color: var(--color-dark);
+		border-radius: 12px;
+
+		svg {
+			width: 66%;
+		}
+	}
+}

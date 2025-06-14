@@ -1,0 +1,182 @@
+.header {
+	position: sticky;
+	padding-block: 35px;
+	z-index: 100;
+	top: 0;
+
+	@include mobile-s {
+		padding-block: 20px 12px;
+	}
+
+	&__logo {
+		@include desktop {
+			width: 175px;
+			height: 17px;
+		}
+
+		@include mobile-s {
+			display: none;
+		}
+	}
+
+	&__logo-alt {
+		@include mobile-s-above {
+			display: none;
+		}
+
+		@include mobile-s {
+			order: 2
+		}
+	}
+
+	&__inner {
+		@include flex-sb;
+
+		column-gap: 29px;
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius-x-large);
+		padding: 5px 50px;
+
+		@include desktop {
+			padding-inline: 40px;
+		}
+
+		@include mobile-s {
+			padding-inline: 0;
+			background-color: var(--color-light);
+			border-radius: 0;			
+		}
+	}
+
+	&__city-block {
+		position: relative;
+	}
+
+	&__magazine {
+		display: flex;
+		align-items: center;
+		column-gap: 18px;
+		color: var(--color-light);
+		position: relative;
+
+		@include desktop {
+			flex-direction: column;
+			align-items: start;
+		}
+	
+		&-time {
+			font-weight: 500;
+			font-size: 20px;
+
+			@include desktop {
+				font-size: 16px;
+			}
+		}
+
+		&-address {
+			font-size: 16px;
+
+			@include desktop {
+				font-size: 14px;
+			}
+		}
+
+		&-devider {
+			width: 1px;
+			height: 20px;
+			background-color: var(--color-light);
+			
+			@include desktop {
+				display: none;
+			}
+		}
+	}
+
+	&__number {
+		display: flex;
+		align-items: center;
+		column-gap: 36px;
+		padding: 22px 45px;
+		color: var(--color-light);
+		background: var(--gradient);
+		border-radius: var(--border-radius-x-large);
+		position: relative;
+
+		&-text {
+			@include desktop {
+				font-size: 14px;
+			}
+		}
+
+		&-telephone {
+			font-weight: 500;
+			
+			@include desktop {
+				font-size: 14px;
+			}
+		}
+
+		&-devider {
+			width: 1px;
+			height: 20px;
+			background-color: var(--color-light);
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+
+		@include mobile-s {
+			display: contents;
+		}
+	}
+
+	&__cart {
+		position: relative;
+
+		@include mobile-s {
+			order: 1;
+		}
+
+		&-count {
+			@include square(18px);
+			@include flex-center(true);
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: var(--color-light);
+			border-radius: 50%;
+			color: var(--color-dark);
+			font-size: 12px;
+			z-index: 2;
+
+			@include mobile-s {
+				background: var(--gradient);
+				color: var(--color-light);
+				top: -8px;
+				right: -8px;
+			}
+		}
+
+		@include hover {
+			.header__cart-count {
+				color: var(--color-accent-light);
+			}
+		}
+	}
+
+	&__soc1al {
+		@include desktop {
+			display: none;
+		}
+	}
+
+	&__burger-button {
+		@include mobile-s {
+			order: 3;
+		}
+	}
+}

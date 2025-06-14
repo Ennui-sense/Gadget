@@ -1,0 +1,55 @@
+.perm-modal {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	width: 225px;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	transition-duration: var(--transition-duration);
+
+	&__inner {
+		padding: 20px 33px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		align-items: center;
+	}
+
+	&__buttons {
+		width: 100%;
+		display: flex;
+		justify-content: space-between
+	}
+
+	&__button {
+		@include button-reset;
+		@include flex-center(true);
+
+		background-color: transparent;
+		border-radius: var(--border-radius-small);
+		font-weight: 500;
+		padding-inline: 22px;
+		height: var(--button-height-x-small);
+		font-size: 12px;
+		border: var(--border);
+		border-color: var(--color-gray-dark);
+
+		@include hover {
+			background-color: var(--color-gray-dark);
+			color: var(--color-light);
+		}
+
+		&--no-border {
+			border: none;
+			transition: text-decoration var(--transition-duration);
+
+			@include hover {
+				text-decoration: underline;
+				text-decoration-skip-ink: none;
+				background-color: transparent;
+				color: var(--color-dark);
+			}
+		}
+	}
+}

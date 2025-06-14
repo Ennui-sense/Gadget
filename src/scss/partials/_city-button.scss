@@ -1,0 +1,16 @@
+.city-button {
+	@include button-reset;
+	@include flex-center(true);
+
+	padding: 22px 24px;
+	column-gap: 14px;
+	background-color: var(--color-gray-light);
+	border-radius: var(--border-radius);
+	color: var(--color-light);
+	font-weight: 500;
+	border: none;
+
+	@include mobile-s {
+		display: none;
+	}
+}

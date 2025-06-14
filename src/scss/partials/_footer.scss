@@ -1,0 +1,60 @@
+.footer {
+	padding-block: 100px 35px;
+	margin-inline: auto;
+	max-width: calc(1850px + 2 * var(--container-padding-x));
+	padding-inline: var(--container-padding-x);
+	color: var(--color-light);
+
+	&__inner {
+		background-color: var(--color-dark);
+		border-radius: var(--border-radius);
+		padding: 100px 80px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		&-image {
+			margin-bottom: 86px;
+		}	
+	}
+
+	&__magazine {
+		&-time {
+			font-weight: 500;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		&-address {
+			font-size: 20px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		column-gap: 200px;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		font-size: 20px;
+
+		&-title {
+			font-weight: 700;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		font-size: 20px;
+
+		&-developers {
+			font-weight: 600;
+		}
+	}
+}
