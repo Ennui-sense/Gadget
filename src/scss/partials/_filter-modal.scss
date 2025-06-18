@@ -1,0 +1,35 @@
+.filter-modal {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius-large);
+	max-width: 650px;
+	width: 100%;
+	box-shadow: var(--box-shadow);
+	transition-duration: var(--transition-duration);
+
+	&__inner {
+		padding: 25px;	
+	}
+
+	&__header {
+		display: inline-flex;
+		height: 35px;
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: var(--color-gray-alt);
+		}
+	}
+
+	
+}

@@ -1,0 +1,51 @@
+<div class="filter-modal">
+	<div class="filter-modal__inner">
+		<header class="filter-modal__header">
+			<p class="filter-modal__title h3">Фильтры</p>
+		</header>
+
+		<form action="" class="filter-modal__form filter-modal-form">
+			<div class="filter-modal-form__options">
+				<div class="filter-modal-form__option">
+					<p class="filter-modal-form__option-title">Цена</p>
+					<div class="filter-modal-form__price-fields">
+						<div class="filter-modal-form__price-field">
+							<label for="min-price" class="filter-modal-form__price-label">Минимальная цена</label>
+							<input type="text" id="min-price" name="min-price" class="filter-modal-form__price-input" placeholder="Введите цену" maxlength="8">
+						</div>
+						<div class="filter-modal-form__price-field">
+							<label for="max-price" class="filter-modal-form__price-label">Максимальная цена</label>
+							<input type="text" id="max-price" name="max-price" class="filter-modal-form__price-input" placeholder="Введите цену">
+						</div>
+					</div>
+				</div>
+
+				<div class="filter-modal-form__option">
+					<p class="filter-modal-form__option-title">Объем памяти</p>
+					<div class="filter-modal-form__option-fields">
+						<label class="filter-modal-form__option-label memory-button">
+							<input type="radio" name="memory" value="64 GB" class="memory-button__input">
+							<span class="memory-button__text">64 GB</span>
+						</label>
+						<label class="filter-modal-form__option-label memory-button">
+							<input type="radio" name="memory" value="128 GB" class="memory-button__input">
+							<span class="memory-button__text">128 GB</span>
+						</label>
+						<label class="filter-modal-form__option-label memory-button">
+							<input type="radio" name="memory" value="256 GB" class="memory-button__input">
+							<span class="memory-button__text">256 GB</span>
+						</label>
+						<label class="filter-modal-form__option-label memory-button">
+							<input type="radio" name="memory" value="512 GB" class="memory-button__input">
+							<span class="memory-button__text">512 GB</span>
+						</label>
+						<label class="filter-modal-form__option-label memory-button">
+							<input type="radio" name="memory" value="1 TB" class="memory-button__input">
+							<span class="memory-button__text">1 TB</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

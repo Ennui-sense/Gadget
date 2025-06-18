@@ -7,6 +7,8 @@ import "./functions/slider";
 // Маска телефона
 import "./functions/inputMask";
 
+import "./functions/just-validate"
+
 //? липка шапка
 // import "./functions/sticky-header";
 

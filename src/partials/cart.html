@@ -1,0 +1,51 @@
+<div class="graph-modal cart">
+	<div class="graph-modal__container cart__content" role="dialog" aria-modal="true" data-graph-target="first">
+		<div class="cart__inner">
+			<header class="cart__header">
+				<p class="cart__title">Корзина</p>
+				<button class="button button-square js-modal-close" type="button">
+					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.5 1.5L21.5 21.5M1.5 21.5L21.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+			</header>
+
+			<div class="cart__body">
+				<ul class="cart__products"></ul>
+
+				<p class="cart__total">Итого: 0 ₽</p>
+
+				<form action="" class="cart__form cart-form">
+					<div class="cart-form__fields">
+						<div class="cart-form__field">
+							<label for="cart-name" class="cart-form__label">Имя</label>
+							<input type="text" name="cart-name" id="cart-name" class="cart-form__input" placeholder="Ваше Имя" maxlength="13">
+						</div>
+						<div class="cart-form__field">
+							<label for="cart-phone" class="cart-form__label">Номер телефона</label>
+							<input type="text" name="cart-phone" id="cart-phone" class="cart-form__input" placeholder="Номер телефона">
+						</div>
+						<div class="cart-form__field">
+							<label for="cart-email" class="cart-form__label">Почта</label>
+							<input type="email" name="cart-email" id="cart-email" class="cart-form__input" placeholder="Почта">
+						</div>
+					</div>
+
+					<div class="cart-form__personal">
+						<input type="checkbox" name="cart-agreement" id="cart-agreement" class="cart-form__personal-input">
+						<label for="cart-agreement" class="cart-form__personal-label">Что то там про согласие на обработку персональных данных</label>
+					</div>
+
+					<div class="cart-form__order">
+						<button type="submit" class="button cart-form__order-button button">
+							<p class="button__text">Оставить заказ</p>
+						</button>
+						<p class="cart-form__order-text">Получение заказа осуществляется самовывозом из магазина “Гаджет Галерея”, расположенного по адресу: г. Пермь, улица Куйбышева, 16 , ТЦ Колизей Cinema  1 этаж</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

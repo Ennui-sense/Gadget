@@ -8,6 +8,11 @@
 	height: var(--button-height-small);
 	border: var(--border);
 
+	&:has(input[type="radio"]:checked) {
+		background-color: var(--color-gray-dark);
+		color: var(--color-light);
+	}
+
 	&:where(.memory-button__cart) {
 		cursor: default;
 	}
@@ -17,10 +22,9 @@
 			background-color: var(--color-gray-dark);
 			color: var(--color-gray-medium);
 		}
+	}
 
-		&.active {
-			background-color: var(--color-gray-dark);
-			color: var(--color-light);
-		}
+	&__input {
+		display: none;
 	}
 }

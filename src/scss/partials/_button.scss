@@ -8,9 +8,11 @@
 	background: var(--color-dark);
 	color: var(--color-light);
 	border: none;
+	cursor: pointer;
 
 	&__text {
 		z-index: 2;
+		text-wrap: nowrap;
 	}
 
 	&:where(:not(.button--transparent))::after {

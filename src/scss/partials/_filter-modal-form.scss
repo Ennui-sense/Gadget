@@ -1,0 +1,48 @@
+.filter-modal-form {
+	&__options {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		margin-bottom: 45px;
+	}
+
+	&__option {
+		&-title {
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+
+		&-fields {
+			display: flex;
+			column-gap: 7px;
+		}
+	}
+
+	&__price {
+		&-fields {
+			display: flex;
+			align-items: center;
+			column-gap: 15px;
+		}
+
+		&-field {
+			display: flex;
+			flex-direction: column;
+			row-gap: 10px;
+			border: var(--border-gray);
+			border-radius: var(--border-radius-small);
+			padding: 10px;
+			width: 210px;
+			font-size: 12px;
+		}
+
+		&-input {
+			border: none;
+			outline: none;
+
+			&:focus {
+				border: none;
+			}
+		}
+	} 	
+}

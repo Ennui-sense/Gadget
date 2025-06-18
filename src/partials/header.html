@@ -16,35 +16,7 @@
 			</svg>
 		</button>
 
-		<div class="perm-modal">
-			<div class="perm-modal__inner">
-				<p class="perm-modal__text">Ваш город <span>Пермь</span>?</p>
-
-				<div class="perm-modal__buttons">
-					<button type="button" class="perm-modal__button perm-modal__button-accept">Да</button>
-					<button type="button" class="perm-modal__button perm-modal__button-decline perm-modal__button--no-border">Нет</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="city-modal">
-			<div class="city-modal__inner">
-				<p class="city-modal__text">Выберите свой город из списка</p>
-
-				<div class="city-modal__buttons">
-					<button type="button" class="city-modal__button city-modal__button-name">Пермь</button>
-					<button type="button" class="city-modal__button city-modal__button-name">Екатеринбург</button>
-				</div>
-
-				<button type="button" class="city-modal__button city-modal__close-button cross-button">
-					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 1L11 11M1 11L11 1" stroke="black" />
-					</svg>
-
-					<span class="visually-hidden">Закрыть</span>
-				</button>
-			</div>
-		</div>
+		{{> city-modal}}
 
 		<div class="header__magazine mobile-hidden">
 			<p class="header__magazine-time"><time datetime="10:00">10:00</time> - <time datetime="21:00">21:00</time></p>
@@ -68,105 +40,10 @@
 					<path d="M16.8115 14.6667C17.1903 15.7402 17.8927 16.6697 18.822 17.3272C19.7512 17.9848 20.8615 18.3378 21.9999 18.3378C23.1382 18.3378 24.2485 17.9848 25.1778 17.3272C26.107 16.6697 26.8094 15.7402 27.1882 14.6667" stroke="white" stroke-width="2.125" stroke-linecap="round"/>
 				</svg>
 
-				<span class="header__cart-count">4</span>
-
 				<span class="visually-hidden">Корзина</span>			
 			</button>
 
-			<div class="graph-modal cart">
-				<div class="graph-modal__container cart__content" role="dialog" aria-modal="true" data-graph-target="first">
-					<div class="cart__inner">
-						<header class="cart__header">
-							<p class="cart__title">Корзина</p>
-							<button class="button button-square js-modal-close" type="button">
-								<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.5 1.5L21.5 21.5M1.5 21.5L21.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-
-								<span class="visually-hidden">Закрыть</span>
-							</button>
-						</header>
-
-						<div class="cart__body">
-							<ul class="cart__products">
-								<li class="cart__product">
-									<article class="cart__card cart-card">
-										<img src="../img/phone-example.png" alt="" class="cart-card__image" width="96" height="172" loading="lazy">
-
-										<div class="cart-card__content">
-											<p class="cart-card__name">Apple iPhone 14</p>
-											<div class="cart-card__options">
-												<button type="button" class="cart-card__button memory-button memory-button__cart">64 GB</button>
-												<button type="button" class="cart-card__button sim-button sim-button__cart">2 sim</button>
-												<button type="button" class="cart-card__button color-button color-button__cart">
-													<span class="color-button__color color-button__color--black"></span>
-													<span class="visually-hidden">Черный</span>
-												</button>
-											</div>
-
-											<button type="button" class="cart-card__delete-button">Удалить</button>
-										</div>
-
-										<p class="cart-card__price">107 553 ₽</p>
-									</article>
-								</li>
-								<li class="cart__product">
-									<article class="cart__card cart-card">
-										<img src="../img/phone-example.png" alt="" class="cart-card__image" width="96" height="172" loading="lazy">
-
-										<div class="cart-card__content">
-											<p class="cart-card__name">Apple iPhone 14</p>
-											<div class="cart-card__options">
-												<button type="button" class="cart-card__button memory-button">64 GB</button>
-												<button type="button" class="cart-card__button sim-button">2 sim</button>
-												<button type="button" class="cart-card__button color-button">
-													<span class="color-button__color color-button__color--black"></span>
-													<span class="visually-hidden">Черный</span>
-												</button>
-											</div>
-
-											<button type="button" class="cart-card__delete-button">Удалить</button>
-										</div>
-
-										<p class="cart-card__price">107 553 ₽</p>
-									</article>
-								</li>
-							</ul>
-
-							<p class="cart__total">Итого: 215 106 ₽</p>
-
-							<form action="" class="cart__form cart-form">
-								<div class="cart-form__fields">
-									<div class="cart-form__field">
-										<label for="cart-name" class="cart-form__label">Имя</label>
-										<input type="text" name="cart-name" id="cart-name" class="cart-form__input" placeholder="Ваше Имя" maxlength="13">
-									</div>
-									<div class="cart-form__field">
-										<label for="cart-phone" class="cart-form__label">Номер телефона</label>
-										<input type="text" name="cart-phone" id="cart-phone" class="cart-form__input" placeholder="Номер телефона">
-									</div>
-									<div class="cart-form__field">
-										<label for="cart-email" class="cart-form__label">Почта</label>
-										<input type="email" name="cart-email" id="cart-email" class="cart-form__input" placeholder="Почта">
-									</div>
-								</div>
-
-								<div class="cart-form__personal">
-									<input type="checkbox" name="cart-agreement" id="cart-agreement" class="cart-form__personal-input">
-									<label for="cart-agreement" class="cart-form__personal-label">Что то там про согласие на обработку персональных данных</label>
-								</div>
-
-								<div class="cart-form__order">
-									<input type="button" value="Оставить заказ" class="button cart-form__order-button">
-									<p class="button">АААА</p>
-									<p class="cart-form__order-text">Получение заказа осуществляется самовывозом из магазина “Гаджет Галерея”, расположенного по адресу: г. Пермь, улица Куйбышева, 16 , ТЦ Колизей Cinema  1 этаж</p>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-
+			{{> cart}}
 
 			<a class="header__soc1al button-square" href="https://vk.com/official_gadgetgallery" target="_blank">
 				<svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">

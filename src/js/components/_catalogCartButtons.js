@@ -1,22 +1,22 @@
 const catalogCarts = document.querySelectorAll('.catalog-cart');
 
 catalogCarts.forEach(cart => {
-	const colorButtons = cart.querySelectorAll('.color-button');
-	const memoryButtons = cart.querySelectorAll('.memory-button');
-	const simButtons = cart.querySelectorAll('.sim-button');
+	const colorButtons = cart.querySelectorAll('.color-button__input');
+	const memoryButtons = cart.querySelectorAll('.memory-button__input');
+	const simButtons = cart.querySelectorAll('.sim-button__input');
 
 	const cartButton = cart.querySelector('.catalog-cart__button-add');
-	const allParameters = cart.querySelectorAll('.catalog-cart__button');
+	const allParameters = cart.querySelectorAll('input');
+	console.log(allParameters.length);
+	
+	
 
 	cartButton.addEventListener('click', () => {
 		allParameters.forEach(parameter => {
-			if (parameter.classList.contains('active')) {
-				console.log(parameter.innerText);
-				
-			}
-
-			parameter.classList.remove('active')
-			parameter.removeAttribute('disabled')
+			setTimeout(() => {
+				parameter.classList.remove('active')
+				parameter.removeAttribute('disabled'), 500	
+			})
 		})
 	})
 
