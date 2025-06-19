@@ -11,7 +11,7 @@ window.addEventListener("click", (event) => {
 		item.name = event.target.closest('.catalog__cart').querySelector('.catalog-cart__title').textContent;
 		item.price = event.target.closest('.catalog__cart').querySelector('.catalog-cart__price').textContent;
 		item.img = event.target.closest('.catalog__cart').querySelector('.catalog-cart__image').getAttribute('src');
-		item.color = event.target.closest('.catalog__cart').querySelector('.color-button__input.active').getAttribute('data-value');
+		item.color = event.target.closest('.catalog__cart').querySelector('.color-button__input.active').getAttribute('value');
 		item.memory = event.target.closest('.catalog__cart').querySelector('.memory-button__input.active').getAttribute("value");
 		item.sim = event.target.closest('.catalog__cart').querySelector('.sim-button__input.active').getAttribute('value');
 

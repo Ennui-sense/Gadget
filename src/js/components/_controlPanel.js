@@ -1,23 +1,22 @@
-const controlPanelButtons = document.querySelectorAll('.control-panel__button');
-const controlPanelButtonAll = document.querySelector('.control-panel__button-all');
+const filters = document.querySelectorAll('.control-panel__button');
+const filterAllProducts = document.querySelector('.control-panel__button-all');
 
-controlPanelButtons.forEach(btn => {
+filters.forEach(btn => {
 	btn.addEventListener('click', () => {
-		console.log('test');
 		btn.classList.toggle('active');
 		
 		if (!btn.classList.contains('сontrol-panel__button-all')) {
-			controlPanelButtonAll.classList.remove('active');
+			filterAllProducts.classList.remove('active');
 		}
 	})
 });
 
-controlPanelButtonAll.addEventListener('click', () => {
-	controlPanelButtons.forEach(btn => {
+filterAllProducts.addEventListener('click', () => {
+	filters.forEach(btn => {
 		btn.classList.remove('active')
 	})
 
-	controlPanelButtonAll.classList.toggle('active');
+	filterAllProducts.classList.toggle('active');
 });
 
 

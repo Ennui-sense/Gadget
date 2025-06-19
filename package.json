@@ -13,6 +13,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
+		"just-validate": "^4.3.0",
 		"node-w3c-validator": "^2.0.2",
 		"sass": "^1.89.1",
 		"sharp": "^0.33.1",
@@ -30,7 +31,6 @@
 		"@floating-ui/dom": "^1.7.1",
 		"graph-modal": "github:maxdenaro/graph-modal",
 		"imask": "^7.6.1",
-		"just-validate": "^4.3.0",
 		"swiper": "^11.2.8"
 	}
 }

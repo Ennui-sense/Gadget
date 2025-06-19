@@ -17,13 +17,13 @@ importers:
       imask:
         specifier: ^7.6.1
         version: 7.6.1
-      just-validate:
-        specifier: ^4.3.0
-        version: 4.3.0
       swiper:
         specifier: ^11.2.8
         version: 11.2.8
     devDependencies:
+      just-validate:
+        specifier: ^4.3.0
+        version: 4.3.0
       node-w3c-validator:
         specifier: ^2.0.2
         version: 2.0.2

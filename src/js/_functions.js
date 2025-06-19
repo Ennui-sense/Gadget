@@ -1,5 +1,5 @@
 // Модальное окно
-import "./functions/modal";
+import "./functions/openModal";
 
 // Слайдер
 import "./functions/slider";
@@ -7,7 +7,15 @@ import "./functions/slider";
 // Маска телефона
 import "./functions/inputMask";
 
-import "./functions/just-validate"
+import "./functions/controlOptions";
+
+import "./functions/popup";
+
+import "./functions/validate-forms";
+// import "./functions/just-validate"
+
+
+import "./functions/getProductsByCity";
 
 //? липка шапка
 // import "./functions/sticky-header";
