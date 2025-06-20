@@ -1,6 +1,6 @@
 import { computePosition, offset } from "@floating-ui/dom";
 
-export function controlPopup(openButton, popup, closeButton, placement, position = openButton) {
+export function controlPopup(openButton, popup, closeButton, placement, position = openButton, openAfterLoad = false) {
 	const openPopup = async () => {
 		const pos = await computePosition(position, popup, {
 			placement: placement,
@@ -22,6 +22,10 @@ export function controlPopup(openButton, popup, closeButton, placement, position
 		popup.style.opacity = '0';
 	}
 
+	if (openAfterLoad) {
+		openPopup();
+	}
+	
 	openButton.addEventListener('click', openPopup);
 	closeButton.addEventListener('click', closePopup);
 

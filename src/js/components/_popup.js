@@ -27,7 +27,7 @@ buttonsCloseCityPopup.forEach(button => {
 })
 
 buttonsClosePermPopup.forEach(button => {
-	controlPopup(buttonOpenPermPopup, permPopup, button, 'bottom-start');
+	controlPopup(buttonOpenPermPopup, permPopup, button, 'bottom-start', buttonOpenPermPopup, true);
 })
 
 buttonsCloseSortPopup.forEach(button => {

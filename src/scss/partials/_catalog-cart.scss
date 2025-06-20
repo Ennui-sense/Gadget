@@ -22,15 +22,14 @@
 	}
 
 	&__form {
-		display: flex;
-		flex-direction: column;
-		row-gap: 45px;
+		position: relative;
 	}
 
 	&__parameters {
 		display: flex;
 		flex-direction: column;
 		row-gap: 30px;
+		margin-bottom: 45px;
 	}
 
 	&__price {
@@ -63,4 +62,16 @@
 		z-index: 2;
 		color: var(--color-light);
 	}
+
+	&__error {
+		position: relative;
+		font-weight: 300;
+		font-size: 15px;
+	}
+}
+
+.just-validate-error-label {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
 }

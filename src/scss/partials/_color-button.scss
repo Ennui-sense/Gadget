@@ -8,6 +8,17 @@
 	border-radius: var(--border-radius-small);
 	border: none;
 
+	&.active {
+		.color-button__color {
+			@include square(40px);
+
+			border-radius: var(--border-radius-small);
+			border: var(--border);
+			border-color: var(--color-gray-alt);
+			border-width: 2px;
+		}
+	}
+
 	&__color {
 		@include square(30px);
 
@@ -54,16 +65,5 @@
 
 	&__input {
 		display: none;
-
-		&.active {
-			& + .color-button__color {
-				@include square(40px);
-
-				border-radius: var(--border-radius-small);
-				border: var(--border);
-				border-color: var(--color-gray-alt);
-				border-width: 2px;
-			}
-		}
 	}
 }

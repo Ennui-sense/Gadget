@@ -17,6 +17,8 @@ import "./functions/validate-forms";
 
 import "./functions/getProductsByCity";
 
+import "./functions/city";
+
 //? липка шапка
 // import "./functions/sticky-header";
 

@@ -7,11 +7,12 @@
 	padding-inline: 22px;
 	height: var(--button-height-small);
 	border: var(--border);
+	transition-duration: var(--transition-duration);
 
-	// &:has(input[type="radio"]:checked) {
-	// 	background-color: var(--color-gray-dark);
-	// 	color: var(--color-light);
-	// }
+	&.active {
+		background-color: var(--color-gray-dark) !important;
+		color: var(--color-light) !important;
+	} 
 
 	&:where(.sim-button__cart) {
 		cursor: default;
@@ -26,20 +27,5 @@
 
 	&__input {
 		display: none;
-
-		&.active {
-			background-color: var(--color-gray-dark);
-			color: var(--color-light);
-		}
 	}
-}
-
-.just-validate-error {
-  border-color: red !important;
-}
-
-.just-validate-error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
 }
