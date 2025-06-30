@@ -7,6 +7,12 @@
 	border-radius: var(--border-radius);
 	border: var(--border);
 
+	@include mobile {
+		@include square(40px);
+
+		border-radius: 12px;
+	}
+
 	@include hover {
 		background-color: var(--color-gray-dark);
 		svg * {

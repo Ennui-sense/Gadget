@@ -3,7 +3,7 @@
 		<div class="cart__inner">
 			<header class="cart__header">
 				<p class="cart__title">Корзина</p>
-				<button class="button button-square js-modal-close" type="button">
+				<button class="button button-square button-square--dark js-modal-close" type="button">
 					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M1.5 1.5L21.5 21.5M1.5 21.5L21.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
@@ -15,34 +15,41 @@
 			<div class="cart__body">
 				<ul class="cart__products"></ul>
 
-				<p class="cart__total">Итого: 0 ₽</p>
+				<!-- <p class="cart__total">Итого: 0 ₽</p> -->
 
 				<form action="" class="cart__form cart-form">
 					<div class="cart-form__fields">
-						<div class="cart-form__field">
-							<label for="cart-name" class="cart-form__label">Имя</label>
-							<input type="text" name="cart-name" id="cart-name" class="cart-form__input" placeholder="Ваше Имя" maxlength="13">
+						<div class="cart-form__field" id="name-field">
+							<label for="cartName" class="cart-form__label">Имя</label>
+							<input type="text" name="cartName" id="cartName" class="cart-form__input" placeholder="Ваше Имя">
 						</div>
-						<div class="cart-form__field">
-							<label for="cart-phone" class="cart-form__label">Номер телефона</label>
-							<input type="text" name="cart-phone" id="cart-phone" class="cart-form__input" placeholder="Номер телефона">
+						<div class="cart-form__field" id="phone-field">
+							<label for="cartPhone" class="cart-form__label">Номер телефона</label>
+							<input type="tel" name="cartPhone" id="cartPhone" class="cart-form__input" placeholder="Номер телефона">
 						</div>
-						<div class="cart-form__field">
-							<label for="cart-email" class="cart-form__label">Почта</label>
-							<input type="email" name="cart-email" id="cart-email" class="cart-form__input" placeholder="Почта">
+						<div class="cart-form__field" id="email-field">
+							<label for="cartEmail" class="cart-form__label">Почта</label>
+							<input type="email" name="cartEmail" id="cartEmail" class="cart-form__input" placeholder="Почта">
 						</div>
 					</div>
 
-					<div class="cart-form__personal">
-						<input type="checkbox" name="cart-agreement" id="cart-agreement" class="cart-form__personal-input">
-						<label for="cart-agreement" class="cart-form__personal-label">Что то там про согласие на обработку персональных данных</label>
-					</div>
+					<p class="cart-form__note">После оформления заказа с вами свяжется консультант для уточнения цены</p>
 
+					<p class="cart-form__personal">
+						Нажимая на кнопку “Оставить заказ”, вы даете <a href="agreement.pdf" class="cart-form__personal-link" target="_blank">согласие</a> 
+						на обработку персональных данных. 
+						Подробнее об обработке данных можно прочитать в <a href="politic.pdf" class="cart-form__personal-link" target="_blank">Политике</a>
+						<!-- <input type="checkbox" name="cartAgreement" id="cartAgreement" class="cart-form__personal-input">
+						<label for="cartAgreement" class="cart-form__personal-label">Что то там про согласие на обработку персональных данных</label> -->
+					</p>
+
+					<p class="cart-form__error"></p>
 					<div class="cart-form__order">
-						<button type="submit" class="button cart-form__order-button button">
+						<button type="submit" class="button cart-form__order-button">
 							<p class="button__text">Оставить заказ</p>
 						</button>
-						<p class="cart-form__order-text">Получение заказа осуществляется самовывозом из магазина “Гаджет Галерея”, расположенного по адресу: г. Пермь, улица Куйбышева, 16 , ТЦ Колизей Cinema  1 этаж</p>
+						
+						<p class="cart-form__order-text">Получение заказа осуществляется самовывозом из магазина “Гаджет Галерея”, расположенного по адресу: <span class="cart-form__order-address">г. Пермь, улица Куйбышева, 16 , ТЦ Колизей Cinema  1 этаж</span></p>
 					</div>
 				</form>
 			</div>

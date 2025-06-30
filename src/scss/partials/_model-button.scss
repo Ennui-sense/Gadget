@@ -1,0 +1,28 @@
+.model-button {
+	@include button-reset;
+	@include flex-center(true);
+	
+	border-radius: var(--border-radius-small);
+	// width: 100%;
+	min-width: 100px;
+	height: 30px;
+	border: var(--border);
+	transition-duration: var(--transition-duration);
+	font-size: 12px;
+	font-weight: 300;
+	cursor: pointer;
+
+	&.active {
+		background-color: var(--color-gray-dark) !important;
+		color: var(--color-light) !important;
+	}
+
+	@include hover {
+		background-color: var(--color-gray-dark);
+		color: var(--color-gray-medium);
+	}
+
+	&__input {
+		display: none;
+	}
+}

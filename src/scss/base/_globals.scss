@@ -30,6 +30,10 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 36px;
+
+	@include tablet {
+		font-size: 32px;
+	}
 }
 
 h3, .h3 {

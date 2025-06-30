@@ -9,6 +9,15 @@
 	border: var(--border);
 	transition-duration: var(--transition-duration);
 
+	@include mobile {
+		height: 35px;
+	}
+
+	&--small {
+		height: 30px;
+		font-size: 12px;
+	}
+
 	&.active {
 		background-color: var(--color-gray-dark) !important;
 		color: var(--color-light) !important;
@@ -16,9 +25,17 @@
 
 	&:where(.sim-button__cart) {
 		cursor: default;
+		color: var(--color-dark);
+
+		@include mobile {
+			padding-inline: 18px;
+			font-size: 14px;
+		}
 	}
 
 	&:where(:not(.sim-button__cart)) {
+		cursor: pointer;
+		
 		@include hover {
 			background-color: var(--color-gray-dark);
 			color: var(--color-gray-medium);

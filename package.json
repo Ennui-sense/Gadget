@@ -29,6 +29,7 @@
 	],
 	"dependencies": {
 		"@floating-ui/dom": "^1.7.1",
+		"axios": "^1.10.0",
 		"graph-modal": "github:maxdenaro/graph-modal",
 		"imask": "^7.6.1",
 		"swiper": "^11.2.8"

@@ -10,7 +10,22 @@
 	font-weight: 500;
 	border: none;
 
-	@include mobile-s {
+	@include mobile {
+		width: 100%;
+		padding-block: 15px;
+	}
+
+	&--desktop {
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&--mobile {
 		display: none;
+
+		@include mobile {
+			display: flex;
+		}
 	}
 }

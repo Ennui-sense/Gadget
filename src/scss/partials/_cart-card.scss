@@ -2,9 +2,14 @@
 	@include flex-sb;
 
 	width: 100%;
-	padding: 35px 40px;
-	column-gap: 50px;
+	padding: 35px 10px;
+	column-gap: 20px;
 	position: relative;
+
+	@include mobile {
+		padding: 12px 0px 12px 20px;
+		column-gap: 20px;
+	}
 
 	&::before {
 		content: "";
@@ -16,6 +21,17 @@
 		height: 148px;
 		width: 2px;
 		background-color: var(--color-dark);
+
+		@include mobile {
+			height: 110px;
+		}
+	}
+
+	&__image {
+		@include mobile {
+			height: 100px;
+			width: auto;
+		}
 	}
 
 	&__content {
@@ -25,6 +41,11 @@
 	&__name {
 		font-size: 20px;
 		margin-bottom: 30px;
+
+		@include mobile {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
 	}
 
 	&__options {
@@ -32,6 +53,10 @@
 		
 		column-gap: 10px;
 		margin-bottom: 35px;
+
+		@include mobile {
+			column-gap: 5px;
+		}
 	}
 
 	&__delete-button {
@@ -41,6 +66,10 @@
 		font-size: 16px;
 		color: var(--color-dark);
 		transition-duration: 0s;
+
+		@include mobile {
+			font-size: 14px;
+		}
 
 		@include hover {
 			text-decoration: underline;

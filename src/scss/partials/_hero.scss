@@ -8,9 +8,15 @@
 		flex-direction: column;
 		row-gap: 30px;
 
-		@include mobile {
+		@include tablet {
 			row-gap: 0;
 		}
+
+		@include mobile {
+			row-gap: 30px;
+			padding-block: 20px;
+		}
+
 	}
 
 	&__screen {
@@ -23,12 +29,12 @@
 			height: 500px !important;
 		}
 
-		@include mobile {
+		@include tablet {
 			height: 370px !important;
 		}
 
-		@include mobile-s {
-			height: 550px !important;
+		@include mobile {
+			height: 600px !important;
 		}
 
 		&-background {
@@ -39,11 +45,11 @@
 			width: 100%;
 			height: 100%;
 
-			@include mobile {
+			@include tablet {
 				border-radius: var(--border-radius-large);
 			}
 
-			@include mobile-s {
+			@include mobile {
 				border-radius: var(--border-radius);
 			}
 		}
@@ -55,6 +61,19 @@
 
 			@include desktop {
 				right: 105px
+			}
+
+			@include tablet {
+				display: none;
+			}
+		}
+
+		&-button-tablet {
+			display: none;
+
+			@include tablet {
+				width: 100%;
+				display: flex;
 			}
 		}
 	}
@@ -69,12 +88,12 @@
 		align-self: center;
 		width: fit-content !important;
 
-		@include mobile {
+		@include tablet {
 			column-gap: 5px;
 			padding-block: 5px
 		}
 
-		@include mobile-s {
+		@include mobile {
 			display: none;
 		}
 		
@@ -87,7 +106,7 @@
 			position: relative;
 			transition: width var(--transition-duration);
 
-			@include mobile {
+			@include tablet {
 				@include square(10px);
 			}
 

@@ -5,9 +5,11 @@
 	background-color: var(--color-light);
 	border-radius: var(--border-radius-large);
 	max-width: 650px;
-	width: 100%;
+	// width: 100%;
 	box-shadow: var(--box-shadow);
 	transition-duration: var(--transition-duration);
+	margin-right: 20px;
+	z-index: 10;
 
 	&__inner {
 		padding: 25px;	
@@ -30,6 +32,4 @@
 			background-color: var(--color-gray-alt);
 		}
 	}
-
-	
 }

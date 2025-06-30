@@ -7,6 +7,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+// Управление слайдером, используя модули пагинации и автопрокрутку
 export const swiper = new Swiper('.swiper', {
   modules: [Pagination, Autoplay],
   loop: true,

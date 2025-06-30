@@ -8,6 +8,10 @@
 	border-radius: var(--border-radius-small);
 	border: none;
 
+	@include mobile {
+		@include square(35px);
+	}
+
 	&.active {
 		.color-button__color {
 			@include square(40px);
@@ -16,11 +20,15 @@
 			border: var(--border);
 			border-color: var(--color-gray-alt);
 			border-width: 2px;
+
+			@include mobile {
+				@include square(35px);
+			}
 		}
 	}
 
 	&__color {
-		@include square(30px);
+		@include square(27px);
 
 		position: absolute;
 		top: 50%;
@@ -44,6 +52,42 @@
 		&--blue {
 			background-color: var(--color-blue);
 		}
+
+		&--yellow {
+			background-color: var(--color-yellow);
+		}
+
+		&--green {
+			background-color: var(--color-green);
+		}
+
+		&--red {
+			background-color: var(--color-red);
+		}
+
+		&--purple {
+			background-color: var(--color-purple);
+		}
+
+		&--ultramarine {
+			background-color: var(--color-ultramarine);
+		}
+
+		&--teal {
+			background-color: var(--color-teal);
+		}
+
+		&--blue-titanium {
+			background-color: var(--color-blue-titanium);
+		}
+
+		&--desert-titanium {
+			background-color: var(--color-desert-titanium);
+		}
+
+		&--natural-titanium {
+			background-color: var(--color-natural-titanium);
+		}
 	}
 
 	&:where(.color-button__cart) {
@@ -51,6 +95,8 @@
 	}
 
 	&:where(:not(.color-button__cart)) {
+		cursor: pointer;
+
 		@include hover {
 			.color-button__color {
 				@include square(40px);

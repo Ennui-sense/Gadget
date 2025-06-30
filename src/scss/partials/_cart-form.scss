@@ -1,8 +1,18 @@
 .cart-form {
 	&__fields {
-		@include flex-sb;
+		display: flex;
+		margin-bottom: 15px;
+		flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 20px;
 
-		margin-bottom: 30px;
+		@include tablet {
+			row-gap: 10px;
+		}
+
+		@include mobile {
+			// flex-direction: column;
+		}
 	}
 
 	&__field {
@@ -10,6 +20,14 @@
 		align-items: start;
 		flex-direction: column;
 		row-gap: 10px;
+
+		@include tablet {
+			row-gap: 8px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__label {
@@ -21,6 +39,16 @@
 		border: var(--border);
 		border-radius: var(--border-radius);
 		padding: 10px 20px;
+		width: 230px;
+
+		@include mobile {
+			width: 100%;
+			font-size: 14px;
+		}
+
+		&.invalid {
+			outline: 1px solid var(--color-error);
+		}
 
 		&::placeholder {
 			color: var(--color-gray);
@@ -29,54 +57,114 @@
 		&:focus {
 			outline: 1px solid var(--color-accent-light);
 		}
+
+		&:-webkit-autofill {
+			-webkit-background-clip: text !important;
+			background-clip: text !important;
+			background-color: transparent !important;
+		}
+	}
+
+	&__note {
+		font-size: 14px;
+		font-weight: 300;
+		margin-bottom: 15px;
+
+		@include mobile {
+			font-size: 12px;
+		}
 	}
 
 	&__personal {
-		@include flex-center(true);
+		font-weight: 300;
+		margin-bottom: 50px;
 
-		height: 100%;
-		margin-bottom: 30px;
+		@include mobile {
+			margin-bottom: 75px;
+			font-size: 14px;
+		}
 
-		&-input {
-			appearance: none;
+		&-link {
+			text-decoration: underline;
+			color: var(--color-accent);
 
-			&:checked {
-				& + .cart-form__personal-label {
-					&::before {
-						background-color: var(--color-dark);
-						border: none;
-					}
-				}
+			@include hover {
+				color: var(--color-gray-dark);
 			}
 		}
 
-		&-label {
-			font-size: 16px;
-			display: flex;
-			align-items: center;
-			column-gap: 10px;
-			cursor: pointer;
+		// @include flex-center(true);
+
+		// height: 100%;
+		// margin-bottom: 15px;
+
+		// &-input {
+		// 	appearance: none;
+
+		// 	&:checked {
+		// 		& + .cart-form__personal-label {
+		// 			&::before {
+		// 				background-color: var(--color-dark);
+		// 				border: none;
+		// 			}
+		// 		}
+		// 	}
+
+		// &-label {
+		// 	font-size: 16px;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	column-gap: 10px;
+		// 	cursor: pointer;
 			
-			&::before {
-				@include square(12px);
+		// 	&::before {
+		// 		@include square(12px);
 
-				content: "";
-				display: block;
-				background-color: transparent;
-				border-radius: var(--border-radius-x-small);
-				border: var(--border);
-			}
-		}
+		// 		content: "";
+		// 		display: block;
+		// 		background-color: transparent;
+		// 		border-radius: var(--border-radius-x-small);
+		// 		border: var(--border);
+		// 	}
+		// }
 	}
 
 	&__order {
 		@include flex-sb;
 
-		column-gap: 65px;
+		@include mobile {
+			flex-direction: column;
+			row-gap: 20px;
+		}
+
+		&-button {
+			@include mobile {
+				width: 100%;
+			}
+		}
 
 		&-text {
 			font-size: 14px;
 			font-weight: 300;
+			max-width: 470px;
+
+			@include tablet {
+				max-width: 350px;
+			}
+
+			@include mobile {
+				max-width: 100%;
+				text-align: center;
+				font-size: 12px;
+			}
 		}
+	}
+
+	&__error {
+		position: relative;
+		text-wrap: nowrap;
+		color: var(--color-error);
+		font-size: 14px;
+		font-weight: 300;
 	}
 }

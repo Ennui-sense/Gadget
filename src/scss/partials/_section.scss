@@ -1,7 +1,15 @@
 .section {
 	&:first-of-type {
 		padding-block: 0 50px;
+
+		@include desktop {
+			padding-block: 0;
+		}
 	}
 
 	padding-block: 50px;
+
+	@include desktop {
+		padding-block: 0px;
+	}
 }

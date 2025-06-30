@@ -8,6 +8,10 @@
 	box-shadow: var(--box-shadow);
 	transition-duration: var(--transition-duration);
 
+	@include mobile {
+		display: none;
+	}
+
 	&__inner {
 		padding: 20px 33px;
 		display: flex;

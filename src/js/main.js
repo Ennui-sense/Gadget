@@ -1,14 +1,19 @@
+// Вендорные библиотеки
+import "./vendor/graph-modal";
+
 // Функции
-import './_functions'
+import './_functions';
 
 // Компоненты
-import './components/_products';
+import './components/_loadDataAfterChangeCity';
 import './components/_cart';
-import './components/_catalogCartButtons';
+import './components/_sort';
 import './components/_controlPanel';
 import './components/_popup';
-import './components/_modal';
-import './components/_selectedFilters';
+import './components/_openModal';
+import './components/_filterControl';
+
+
 
 
 // import './components/_output';

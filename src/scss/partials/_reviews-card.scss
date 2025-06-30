@@ -5,6 +5,18 @@
 	box-shadow: var(--box-shadow);
 	max-width: 356px;
 
+	@include tablet {
+		max-width: 330px;
+
+		&:where(:not(.reviews-card-mobile)) {
+			display: none;
+		}
+	}
+
+	@include mobile {
+		max-width: 100%;
+	}
+
 	&__header {
 		display: flex;
 		flex-direction: column;

@@ -1,0 +1,1374 @@
+{
+  "product-1": {
+    "id": 1,
+    "name": "iPhone 11",
+    "base_price": 28990,
+	"category": "iphone",
+	"model": "iphone-11",
+	"base_color": "white",
+	"base_image": "products/iphone-11/iphone-11-w.jpg",
+    "variants": [
+      		{
+			"color": "white",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-bk.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-g.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-r.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-pl.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-pl.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-11/iphone-11-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "128 GB",
+			"price": 34990,
+			"image": "products/iphone-11/iphone-11-y.jpg"
+			}
+      
+    ],
+		"colors": ["white", "black"],
+		"memories": ["64", "128"]
+  },
+	"product-2": {
+		"id": 2,
+		"name": "iPhone 12",
+		"base_price": 32990,
+		"category": "iphone",
+		"model": "iphone-12",
+		"base_color": "white",
+		"base_image": "products/iphone-12/iphone-12-w.jpg",
+		"variants": [
+			{
+			"color": "white",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-bk.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-pl.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-pl.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-pl.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-g.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-bl.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-bl.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-bl.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "64 GB",
+			"price": 32990,
+			"image": "products/iphone-12/iphone-12-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "128 GB",
+			"price": 35990,
+			"image": "products/iphone-12/iphone-12-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "256 GB",
+			"price": 49990,
+			"image": "products/iphone-12/iphone-12-r.jpg"
+			}
+		],
+		"colors": ["white", "black", "purple", "green", "blue", "red"],
+		"memories": ["64", "128", "256"]
+	},
+	"product-3": {
+		"id": 3,
+		"name": "iPhone 13",
+		"base_price": 43990,
+		"category": "iphone",
+		"model": "iphone-13",
+		"base_color": "white",
+		"base_image": "products/iphone-13/iphone-13-w.jpg",	
+		"variants": [
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-bk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-pk.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-bl.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-bl.jpg" 
+			},
+			{
+			"color": "red",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "128 GB",
+			"price": 49990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "256 GB",
+			"price": 54990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "512 GB",
+			"price": 56990,
+			"image": "products/iphone-13/iphone-13-w.jpg"
+			}
+		],
+		"colors": ["white", "black", "pink", "green", "blue", "red"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-4": {
+		"id": 4,
+		"name": "iPhone 14",
+		"base_price": 43990,
+		"category": "iphone",
+		"model": "iphone-14",
+		"base_color": "white",
+		"base_image": "products/iphone-14/iphone-14-w.jpg",	
+		"variants": [
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 44990,
+			"image": "products/iphone-14/iphone-14-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 53990,
+			"image": "products/iphone-14/iphone-14-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 65990,
+			"image": "products/iphone-14/iphone-14-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 44990,
+			"image": "products/iphone-14/iphone-14-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 53990,
+			"image": "products/iphone-14/iphone-14-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 64990,
+			"image": "products/iphone-14/iphone-14-bk.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "128 GB",
+			"price": 46990,
+			"image": "products/iphone-14/iphone-14-pl.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "256 GB",
+			"price": 59990,
+			"image": "products/iphone-14/iphone-14-pl.jpg"
+			},
+			{
+			"color": "purple",
+			"memory": "512 GB",
+			"price": 68990,
+			"image": "products/iphone-14/iphone-14-pl.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "128 GB",
+			"price": 44990,
+			"image": "products/iphone-14/iphone-14-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "256 GB",
+			"price": 55990,
+			"image": "products/iphone-14/iphone-14-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "512 GB",
+			"price": 68990,
+			"image": "products/iphone-14/iphone-14-bl.jpg" 
+			},
+			{
+			"color": "red",
+			"memory": "128 GB",
+			"price": 44990,
+			"image": "products/iphone-14/iphone-14-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "256 GB",
+			"price": 55990,
+			"image": "products/iphone-14/iphone-14-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "512 GB",
+			"price": 59990,
+			"image": "products/iphone-14/iphone-14-r.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "128 GB",
+			"price": 44990,
+			"image": "products/iphone-14/iphone-14-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "256 GB",
+			"price": 55990,
+			"image": "products/iphone-14/iphone-14-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "512 GB",
+			"price": 59990,
+			"image": "products/iphone-14/iphone-14-y.jpg"
+			}		
+		],
+		"colors": ["white", "black", "purple", "blue", "red", "yellow"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-5": {
+		"id": 5,
+		"name": "iPhone 15",
+		"base_price": 53990,
+		"category": "iphone",
+		"model": "iphone-15",
+		"base_color": "black",
+		"base_image": "products/iphone-15/iphone-15-bk.jpg",	
+		"variants": [
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 53990,
+			"image": "products/iphone-15/iphone-15-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 64990,
+			"image": "products/iphone-15/iphone-15-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 82990,
+			"image": "products/iphone-15/iphone-15-bk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "128 GB",
+			"price": 53990,
+			"image": "products/iphone-15/iphone-15-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "256 GB",
+			"price": 65990,
+			"image": "products/iphone-15/iphone-15-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "512 GB",
+			"price": 84990,
+			"image": "products/iphone-15/iphone-15-pk.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "128 GB",
+			"price": 53990,
+			"image": "products/iphone-15/iphone-15-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "256 GB",
+			"price": 64990,
+			"image": "products/iphone-15/iphone-15-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "512 GB",
+			"price": 84990,
+			"image": "products/iphone-15/iphone-15-bl.jpg" 
+			},
+			{
+			"color": "green",
+			"memory": "128 GB",
+			"price": 53990,
+			"image": "products/iphone-15/iphone-15-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "256 GB",
+			"price": 65990,
+			"image": "products/iphone-15/iphone-15-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "512 GB",
+			"price": 84990,
+			"image": "products/iphone-15/iphone-15-g.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "128 GB",
+			"price": 53990,
+			"image": "products/iphone-15/iphone-15-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "256 GB",
+			"price": 65990,
+			"image": "products/iphone-15/iphone-15-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "512 GB",
+			"price": 82990,
+			"image": "products/iphone-15/iphone-15-y.jpg"
+			}
+			
+		],
+		"colors": ["black", "pink", "blue", "green", "yellow"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-6": {
+		"id": 6,
+		"name": "iPhone 15 Pro",
+		"base_price": 74990,
+		"category": "iphone",
+		"model": "iphone-15",
+		"base_color": "blue-titanium",
+		"base_image": "products/iphone-15-pro/iphone-15-pro-bT.jpg",	
+		"variants": [
+			{
+			"color": "blue-titanium",
+			"memory": "128 GB",
+			"price": 74990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bT.jpg"	
+			},
+			{
+			"color": "blue-titanium",
+			"memory": "256 GB",
+			"price": 87990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bT.jpg"	
+			},
+			{
+			"color": "blue-titanium",
+			"memory": "512 GB",
+			"price": 101990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bT.jpg"	
+			},
+			{
+			"color": "blue-titanium",
+			"memory": "1 TB",
+			"price": 109990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bT.jpg"	
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 76990,
+			"image": "products/iphone-15-pro/iphone-15-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 87990,
+			"image": "products/iphone-15-pro/iphone-15-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 101990,
+			"image": "products/iphone-15-pro/iphone-15-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "1 TB",
+			"price": 109990,
+			"image": "products/iphone-15-pro/iphone-15-pro-wT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "128 GB",
+			"price": 77990,
+			"image": "products/iphone-15-pro/iphone-15-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "256 GB",
+			"price": 87990,
+			"image": "products/iphone-15-pro/iphone-15-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "512 GB",
+			"price": 101990,
+			"image": "products/iphone-15-pro/iphone-15-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "1 TB",
+			"price": 109990,
+			"image": "products/iphone-15-pro/iphone-15-pro-nT.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 77990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 87990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 101990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "1 TB",
+			"price": 109990,
+			"image": "products/iphone-15-pro/iphone-15-pro-bk.jpg"
+			}			
+		],
+		"colors": ["blue-titanium", "white", "natural-titanium", "black"],
+		"memories": ["128", "256", "512", "1024"]
+	},
+	"product-7": {
+		"id": 7,
+		"name": "iPhone 15 Pro Max",
+		"base_price": 89990,
+		"category": "iphone",
+		"model": "iphone-15",
+		"base_color": "blue-titanium",
+		"base_image": "products/iphone-15-pro-max/iphone-15-pro-max-bl.jpg",
+		"variants": [
+			{
+			"color": "blue-titanium",
+			"memory": "256 GB",
+			"price": 89990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bl.jpg"	
+			},
+			{
+			"color": "blue-titanium",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bl.jpg"	
+			},
+			{
+			"color": "blue-titanium",
+			"memory": "1 TB",
+			"price": 117990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bl.jpg"	
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 89990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "1 TB",
+			"price": 119990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-wT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "256 GB",
+			"price": 89990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "1 TB",
+			"price": 117990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-nT.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 89990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "1 TB",
+			"price": 114990,
+			"image": "products/iphone-15-pro-max/iphone-15-pro-max-bk.jpg"
+			}			
+		],
+		"colors": ["blue-titanium", "white", "natural-titanium", "black"],
+		"memories": ["256", "512", "1024"]
+	},
+	"product-8": {
+		"id": 8,
+		"name": "iPhone 15",
+		"base_price": 63990,
+		"category": "iphone",
+		"model": "iphone-15-plus",
+		"base_color": "black",
+		"base_image": "products/iphone-15-plus/iphone-15-plus-bk.jpg",	
+		"variants": [
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 63990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 76990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 90990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "128 GB",
+			"price": 63990,
+			"image": "products/iphone-15-plus/iphone-15-plus-p.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "256 GB",
+			"price": 76990,
+			"image": "products/iphone-15-plus/iphone-15-plus-p.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-15-plus/iphone-15-plus-p.jpg"
+			},
+			{
+			"color": "blue",
+			"memory": "128 GB",
+			"price": 63990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "256 GB",
+			"price": 76990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bl.jpg" 
+			},
+			{
+			"color": "blue",
+			"memory": "512 GB",
+			"price": 96990,
+			"image": "products/iphone-15-plus/iphone-15-plus-bl.jpg" 
+			},
+			{
+			"color": "green",
+			"memory": "128 GB",
+			"price": 63990,
+			"image": "products/iphone-15-plus/iphone-15-plus-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "256 GB",
+			"price": 76990,
+			"image": "products/iphone-15-plus/iphone-15-plus-g.jpg"
+			},
+			{
+			"color": "green",
+			"memory": "512 GB",
+			"price": 89990,
+			"image": "products/iphone-15-plus/iphone-15-plus-g.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "128 GB",
+			"price": 63990,
+			"image": "products/iphone-15-plus/iphone-15-plus-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "256 GB",
+			"price": 76990,
+			"image": "products/iphone-15-plus/iphone-15-plus-y.jpg"
+			},
+			{
+			"color": "yellow",
+			"memory": "512 GB",
+			"price": 96990,
+			"image": "products/iphone-15-plus/iphone-15-plus-y.jpg"
+			}
+			
+		],
+		"colors": ["black", "pink", "blue", "green", "yellow"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-9": {
+		"id": 9,
+		"name": "iPhone 16",
+		"base_price": 59990,
+		"category": "iphone",
+		"model": "iphone-16",
+		"base_color": "black",
+		"base_image": "products/iphone-16/iphone-16-bk.jpg",	
+		"variants": [
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 59990,
+			"image": "products/iphone-16/iphone-16-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 64990,
+			"image": "products/iphone-16/iphone-16-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 89990,
+			"image": "products/iphone-16/iphone-16-bk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "128 GB",
+			"price": 59990,
+			"image": "products/iphone-16/iphone-16-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "256 GB",
+			"price": 75990,
+			"image": "products/iphone-16/iphone-16-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "512 GB",
+			"price": 92990,
+			"image": "products/iphone-16/iphone-16-pk.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 59990,
+			"image": "products/iphone-16/iphone-16-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 73990,
+			"image": "products/iphone-16/iphone-16-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 89990,
+			"image": "products/iphone-16/iphone-16-w.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "128 GB",
+			"price": 59990,
+			"image": "products/iphone-16/iphone-16-u.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "256 GB",
+			"price": 74990,
+			"image": "products/iphone-16/iphone-16-u.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "512 GB",
+			"price": 89990,
+			"image": "products/iphone-16/iphone-16-u.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "128 GB",
+			"price": 59990,
+			"image": "products/iphone-16/iphone-16-t.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "256 GB",
+			"price": 71990,
+			"image": "products/iphone-16/iphone-16-t.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "512 GB",
+			"price": 89990,
+			"image": "products/iphone-16/iphone-16-t.jpg"
+			}
+			
+		],
+		"colors": ["black", "pink", "white", "ultramarine", "teal"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-10": {
+		"id": 10,
+		"name": "iPhone 16 Pro",
+		"base_price": 82990,
+		"category": "iphone",
+		"model": "iphone-16-pro",
+		"base_color": "desert-titanium",
+		"base_image": "products/iphone-16-pro/iphone-16-pro-dT.jpg",	
+		"variants": [
+			{
+			"color": "desert-titanium",
+			"memory": "128 GB",
+			"price": 82990,
+			"image": "products/iphone-16-pro/iphone-16-pro-dT.jpg"	
+			},
+			{
+			"color": "desert-titanium",
+			"memory": "256 GB",
+			"price": 92990,
+			"image": "products/iphone-16-pro/iphone-16-pro-dT.jpg"	
+			},
+			{
+			"color": "desert-titanium",
+			"memory": "512 GB",
+			"price": 109990,
+			"image": "products/iphone-16-pro/iphone-16-pro-dT.jpg"	
+			},
+			{
+			"color": "desert-titanium",
+			"memory": "1 TB",
+			"price": 124990,
+			"image": "products/iphone-16-pro/iphone-16-pro-dT.jpg"	
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 82990,
+			"image": "products/iphone-16-pro/iphone-16-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 92990,
+			"image": "products/iphone-16-pro/iphone-16-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 109990,
+			"image": "products/iphone-16-pro/iphone-16-pro-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "1 TB",
+			"price": 124990,
+			"image": "products/iphone-16-pro/iphone-16-pro-wT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "128 GB",
+			"price": 82990,
+			"image": "products/iphone-16-pro/iphone-16-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "256 GB",
+			"price": 92990,
+			"image": "products/iphone-16-pro/iphone-16-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "512 GB",
+			"price": 109990,
+			"image": "products/iphone-16-pro/iphone-16-pro-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "1 TB",
+			"price": 124990,
+			"image": "products/iphone-16-pro/iphone-16-pro-nT.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 82990,
+			"image": "products/iphone-16-pro/iphone-16-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 92990,
+			"image": "products/iphone-16-pro/iphone-16-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 109990,
+			"image": "products/iphone-16-pro/iphone-16-pro-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "1 TB",
+			"price": 124990,
+			"image": "products/iphone-16-pro/iphone-16-pro-bk.jpg"
+			}			
+		],
+		"colors": ["desert-titanium", "white", "natural-titanium", "black"],
+		"memories": ["128", "256", "512", "1024"]
+	},
+	"product-11": {
+		"id": 11,
+		"name": "iPhone 16 Pro Max",
+		"base_price": 82990,
+		"category": "iphone",
+		"model": "iphone-16-pro-max",
+		"base_color": "desert-titanium",
+		"base_image": "products/iphone-16-pro-max/iphone-16-pro-max-dT.jpg",	
+		"variants": [
+			{
+			"color": "desert-titanium",
+			"memory": "256 GB",
+			"price": 97990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-dT.jpg"	
+			},
+			{
+			"color": "desert-titanium",
+			"memory": "512 GB",
+			"price": 117990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-dT.jpg"	
+			},
+			{
+			"color": "desert-titanium",
+			"memory": "1 TB",
+			"price": 129990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-dT.jpg"	
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 98990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 121990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-wT.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "1 TB",
+			"price": 131990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-wT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "256 GB",
+			"price": 98990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "512 GB",
+			"price": 121990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-nT.jpg"
+			},
+			{
+			"color": "natural-titanium",
+			"memory": "1 TB",
+			"price": 131990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-nT.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 98990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 121990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "1 TB",
+			"price": 133990,
+			"image": "products/iphone-16-pro-max/iphone-16-pro-max-bk.jpg"
+			}			
+		],
+		"colors": ["desert-titanium", "white", "natural-titanium", "black"],
+		"memories": ["256", "512", "1024"]
+	},
+	"product-12": {
+		"id": 12,
+		"name": "iPhone 16e",
+		"base_price": 45490,
+		"category": "iphone",
+		"model": "iphone-16-e",
+		"base_color": "white",
+		"base_image": "products/iphone-16-e/iphone-16-e-w.jpg",
+		"variants": [
+      		{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 45490,
+			"image": "products/iphone-16-e/iphone-16-e-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 59990,
+			"image": "products/iphone-16-e/iphone-16-e-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 74990,
+			"image": "products/iphone-16-e/iphone-16-e-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 45990,
+			"image": "products/iphone-16-e/iphone-16-e-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 59990,
+			"image": "products/iphone-16-e/iphone-16-e-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 74990,
+			"image": "products/iphone-16-e/iphone-16-e-bk.jpg"
+			}
+      
+    ],
+		"colors": ["white", "black"],
+		"memories": ["64", "128"]
+  },
+  "product-13": {
+		"id": 13,
+		"name": "iPhone 16 Plus",
+		"base_price": 69990,
+		"category": "iphone",
+		"model": "iphone-16-plus",
+		"base_color": "white",
+		"base_image": "products/iphone-16-plus/iphone-16-plus-w.jpg",	
+		"variants": [
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 71990,
+			"image": "products/iphone-16-plus/iphone-16-plus-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 80990,
+			"image": "products/iphone-16-plus/iphone-16-plus-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "512 GB",
+			"price": 95990,
+			"image": "products/iphone-16-plus/iphone-16-plus-bk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "128 GB",
+			"price": 69990,
+			"image": "products/iphone-16-plus/iphone-16-plus-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "256 GB",
+			"price": 82990,
+			"image": "products/iphone-16-plus/iphone-16-plus-pk.jpg"
+			},
+			{
+			"color": "pink",
+			"memory": "512 GB",
+			"price": 102990,
+			"image": "products/iphone-16-plus/iphone-16-plus-pk.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 69990,
+			"image": "products/iphone-16-plus/iphone-16-plus-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 79990,
+			"image": "products/iphone-16-plus/iphone-16-plus-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "512 GB",
+			"price": 95990,
+			"image": "products/iphone-16-plus/iphone-16-plus-w.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "128 GB",
+			"price": 69990,
+			"image": "products/iphone-16-plus/iphone-16-plus-u.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "256 GB",
+			"price": 81990,
+			"image": "products/iphone-16-plus/iphone-16-plus-u.jpg"
+			},
+			{
+			"color": "ultramarine",
+			"memory": "512 GB",
+			"price": 95990,
+			"image": "products/iphone-16-plus/iphone-16-plus-u.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "128 GB",
+			"price": 69990,
+			"image": "products/iphone-16-plus/iphone-16-plus-t.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "256 GB",
+			"price": 79990,
+			"image": "products/iphone-16-plus/iphone-16-plus-t.jpg"
+			},
+			{
+			"color": "teal",
+			"memory": "512 GB",
+			"price": 99990,
+			"image": "products/iphone-16-plus/iphone-16-plus-t.jpg"
+			}
+			
+		],
+		"colors": ["black", "pink", "white", "ultramarine", "teal"],
+		"memories": ["128", "256", "512"]
+	},
+	"product-14": {
+    "id": 14,
+    "name": "iPhone SE 3 (2022)",
+    "base_price": 28990,
+	"category": "iphone",
+	"model": "iphone-se3",
+	"base_color": "white",
+	"base_image": "products/iphone-se/iphone-se-w.jpg",
+    "variants": [
+      		{
+			"color": "white",
+			"memory": "64 GB",
+			"price": 28990,
+			"image": "products/iphone-se/iphone-se-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "128 GB",
+			"price": 37990,
+			"image": "products/iphone-se/iphone-se-w.jpg"
+			},
+			{
+			"color": "white",
+			"memory": "256 GB",
+			"price": 41990,
+			"image": "products/iphone-se/iphone-se-w.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "64 GB",
+			"price": 31990,
+			"image": "products/iphone-se/iphone-se-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "128 GB",
+			"price": 37990,
+			"image": "products/iphone-se/iphone-se-bk.jpg"
+			},
+			{
+			"color": "black",
+			"memory": "256 GB",
+			"price": 41990,
+			"image": "products/iphone-se/iphone-se-bk.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "64 GB",
+			"price": 31990,
+			"image": "products/iphone-se/iphone-se-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "128 GB",
+			"price": 37990,
+			"image": "products/iphone-se/iphone-se-r.jpg"
+			},
+			{
+			"color": "red",
+			"memory": "256 GB",
+			"price": 41990,
+			"image": "products/iphone-se/iphone-se-r.jpg"
+			}
+      
+    ],
+		"colors": ["white", "black", "red"],
+		"memories": ["64", "128", "256"]
+  }
+	
+}

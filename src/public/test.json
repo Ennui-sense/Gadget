@@ -1,0 +1,97 @@
+{
+  "product-1": {
+    "id": 1,
+    "name": "iPhone 11",
+    "base_price": 28999,
+		"category": "iphone",
+		"model": "iphone-11",
+		"base_color": "white",
+		"base_image": "products/iphone-11-w.jpg",
+    "variants": [
+      {
+        "color": "white",
+        "image": "products/iphone-11-w.jpg"
+      },
+      {
+        "color": "black",
+        "image": "products/iphone-11-b.jpg"
+      }
+    ],
+		"colors": ["white", "black"],
+		"memories": ["64", "128"]
+  },
+	"product-2": {
+		"id": 2,
+		"name": "iPhone 12",
+		"base_price": 32999,
+		"category": "iphone",
+		"model": "iphone-12",
+		"base_color": "white",
+		"base_image": "products/iphone-12-w.jpg",
+		"variants": [
+			{
+				"color": "white",
+				"image": "products/iphone-12-w.jpg"
+			},
+			{
+				"color": "black",
+				"image": "products/iphone-12-b.jpg"
+			},
+			{
+				"color": "purple",
+				"image": "products/iphone-12-p.jpg"
+			},
+			{
+				"color": "green",
+				"image": "products/iphone-12-g.jpg"
+			},
+			{
+				"color": "blue",
+				"image": "products/iphone-12-b.jpg"
+			},
+			{
+				"color": "red",
+				"image": "products/iphone-12-r.jpg"
+			}
+		],
+		"colors": ["white", "black", "purple", "green", "blue", "red"],
+		"memories": ["64", "128", "256"]
+	},
+	"product-3": {
+		"id": 3,
+		"name": "iPhone 13",
+		"base_price": 43999,
+		"category": "iphone",
+		"model": "iphone-13",
+		"base_color": "white",
+		"base_image": "products/iphone-13-w.jpg",	
+		"variants": [
+			{
+				"color": "white",
+				"image": "products/iphone-13-w.jpg"
+			},
+			{
+				"color": "black",
+				"image": "products/iphone-13-m.jpg"
+			},
+			{
+				"color": "pink",
+				"image": "products/iphone-13-p.jpg"
+			},
+			{
+				"color": "green",
+				"image": "products/iphone-13-g.jpg"
+			},
+			{
+				"color": "blue",
+				"image": "products/iphone-13-b.jpg"
+			},
+			{
+				"color": "red",
+				"image": "products/iphone-13-r.jpg"
+			}
+		],
+		"colors": ["white", "black", "pink", "green", "blue", "red"],
+		"memories": ["128", "256", "512"]
+	}
+}

@@ -10,12 +10,34 @@
 	border: none;
 	cursor: pointer;
 
+	&--transparent {
+		background-color: transparent;
+		color: var(--color-dark);
+		border: var(--border);
+
+		@include hover {
+			background-color: var(--color-gray-dark);
+			color: var(--color-light);
+		}
+	}
+
+	&--disabled {
+		background-color: var(--color-gray-medium);
+		color: var(--color-light);
+		cursor: default;
+	}
+
+	&--small {
+		height: 40px;
+		font-size: 14px;
+	}
+
 	&__text {
 		z-index: 2;
 		text-wrap: nowrap;
 	}
 
-	&:where(:not(.button--transparent))::after {
+	&:where(:not(.button--transparent):not(.button--disabled))::after {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -31,17 +53,6 @@
 	@include hover {
 		&::after {
 			opacity: 1;
-		}
-	}
-
-	&--transparent {
-		background-color: transparent;
-		color: var(--color-dark);
-		border: var(--border);
-
-		@include hover {
-			background-color: var(--color-gray-dark);
-			color: var(--color-light);
 		}
 	}
 }

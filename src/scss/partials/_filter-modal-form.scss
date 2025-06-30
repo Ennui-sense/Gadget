@@ -4,6 +4,10 @@
 		flex-direction: column;
 		row-gap: 30px;
 		margin-bottom: 45px;
+
+		@include mobile {
+			row-gap: 20px;
+		}
 	}
 
 	&__option {
@@ -15,14 +19,21 @@
 		&-fields {
 			display: flex;
 			column-gap: 7px;
+			flex-wrap: wrap;
+			row-gap: 7px;
 		}
 	}
 
 	&__price {
 		&-fields {
 			display: flex;
-			align-items: center;
+			align-items: start;
 			column-gap: 15px;
+
+			@include mobile {
+				flex-direction: column;
+				row-gap: 10px;
+			}
 		}
 
 		&-field {
@@ -39,10 +50,32 @@
 		&-input {
 			border: none;
 			outline: none;
+			
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
 
 			&:focus {
 				border: none;
 			}
 		}
-	} 	
+	}
+
+	&__buttons {
+		display: flex;
+		column-gap: 20px;
+
+		@include mobile {
+			flex-direction: column;
+			row-gap: 10px;
+		}
+	}
+
+	&__button {
+		@include mobile {
+			width: 100%;
+		}
+	}
 }

@@ -1,7 +1,8 @@
-import IMask from "imask";
-
-const inputPhone = document.querySelector('#cart-phone');
-
-export const mask = IMask(inputPhone, {
-		mask: '+{7} (000) 000-00-00',
+document.querySelectorAll(".scroll-catalog-button").forEach((button) => {
+	button.addEventListener("click", () => {
+		window.scrollTo({
+			top: document.querySelector(".catalog").offsetTop - 80,
+			behavior: "smooth"
+		})
+	})
 })

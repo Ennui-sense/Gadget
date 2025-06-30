@@ -7,28 +7,34 @@
 	max-width: 360px;
 	box-shadow: var(--box-shadow);
 	transition-duration: var(--transition-duration);
+	margin-right: 20px;
 
 	&__inner {
 		padding: 25px;
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+
+		@include mobile {
+			padding: 20px;
+		}
 	}
 
 	&__form {
 		display: flex;
 		column-gap: 20px;
 		align-items: center;
+		justify-content: start;
 	}
 
 	&__field {
-		@include flex-center(true);
-
+		display: flex;
 		height: 100%;
 	}
 
 	&__input {
 		appearance: none;
+		display: none;
 
 		&:checked {
 			& + .sort-modal__label {
@@ -46,6 +52,10 @@
 		column-gap: 10px;
 		align-items: center;
 		cursor: pointer;
+
+		@include mobile {
+			column-gap: 7px;
+		}
 
 		&::before {
 			@include square(12px);

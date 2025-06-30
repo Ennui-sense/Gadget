@@ -1,6 +1,7 @@
 import { controlPopup } from "../functions/popup";
 
-const buttonOpenCityPopup = document.querySelector('.perm-modal__button-decline');
+// Создаем переменные под селекторы элементов, связанных с попапами, а именно кнопки, которые открывают и закрывают их и сам попап
+const buttonsOpenCityPopup = document.querySelectorAll('.open-city-modal');
 const cityPopup = document.querySelector('.city-modal');
 const buttonsCloseCityPopup = document.querySelectorAll('.city-modal__button');
 
@@ -20,24 +21,67 @@ const buttonsCloseSortPopup = document.querySelectorAll('.sort-modal__label');
 
 const buttonOpenFilterPopup = document.querySelector(".button-filter__filter");
 const filterPopup = document.querySelector(".filter-modal")
-// const buttonCloseFilterPopup = document.querySelector("")
+const buttonsCloseFilterPopup = document.querySelectorAll(".filter-modal-form__button")
 
-buttonsCloseCityPopup.forEach(button => {
-	controlPopup(buttonOpenCityPopup, cityPopup, button, 'bottom-start', buttonOpenPermPopup);
+
+
+const buttonOpenMenuPopup = document.querySelector('.header__burger-button');
+const menuPopup = document.querySelector('.menu-modal');
+
+
+
+// Перебираем все кнопки, при нажатии на которые будет закрываться попап, после чего вызываем функцию, которая управляет попапом 
+
+
+
+const tabletWidthMediaQuery = window.matchMedia('(max-width: 1279px) and (min-width: 768px)');
+const mobileWidthMediaQuery = window.matchMedia('(max-width: 767px)');
+let location = 'bottom-start';
+let position = buttonsOpenCityPopup[0];
+
+function tabletControl(isTabletSize) {
+	if (isTabletSize) {
+		location = "bottom-end";
+		console.log('конец');
+		
+	}
+	else {
+		location = "bottom-start";
+		console.log('начало');
+	}
+
+	controlPopup([buttonOpenSortPopup], sortPopup, buttonsCloseSortPopup, location);
+	controlPopup([buttonOpenFilterPopup], filterPopup, buttonsCloseFilterPopup, location);
+}
+
+function mobileControl(isMobileSize) {
+	if (isMobileSize) {
+		position = buttonsOpenCityPopup[2];
+		console.log('я в меню');
+		
+	}
+	else {
+		position = buttonsOpenCityPopup[0];
+		console.log('я в хедере');
+	}
+
+	controlPopup(buttonsOpenCityPopup, cityPopup, buttonsCloseCityPopup, "bottom-center", position);
+}
+
+
+
+tabletControl(tabletWidthMediaQuery.matches);
+mobileControl(mobileWidthMediaQuery.matches);
+
+
+tabletWidthMediaQuery.addEventListener('change', function (event) {
+	tabletControl(event.matches)
 })
 
-buttonsClosePermPopup.forEach(button => {
-	controlPopup(buttonOpenPermPopup, permPopup, button, 'bottom-start', buttonOpenPermPopup, true);
+mobileWidthMediaQuery.addEventListener('change', function (event) {
+	mobileControl(event.matches)
 })
 
-buttonsCloseSortPopup.forEach(button => {
-	controlPopup(buttonOpenSortPopup, sortPopup, button, 'bottom-start');
-})
-
-buttonsCloseSortPopup.forEach(button => {
-	controlPopup(buttonOpenFilterPopup, filterPopup, button, 'bottom-end');
-})
-
-
-
+controlPopup([buttonOpenMenuPopup], menuPopup, buttonsCloseCityPopup, 'bottom-end');
+controlPopup([buttonOpenPermPopup], permPopup, buttonsClosePermPopup, 'bottom-start', buttonOpenPermPopup, true);
 
